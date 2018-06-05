@@ -50,17 +50,7 @@
             bannerFocus = document.getElementById("banner");
             bannerFocus.setAttribute("tabindex", 1);
             bannerFocus.focus();
-            
-            //Radio button default selected to be list-option-1. HAJ.            
-            var radioButton1 = document.getElementById("list-option-1");
-            radioButton1.checked = true;
-        
-            var radioButton2 = document.getElementById("list-option-2");
-            radioButton2.checked = false;
-            
-            var radioButton3 = document.getElementById("list-option-3");
-            radioButton2.checked = false;
-            
+                    
             switch (storyProgress) {
                 case 0:
                     decisionOne();
@@ -75,8 +65,21 @@
                     storyProgress += 1;
                     break;
             } 
-        
+            defaultRadioButton();
         }   
+
+        //Radio button default selected to be list-option-1. HAJ.            
+        function defaultRadioButton(){
+            var radioButton1 = document.getElementById("list-option-1");
+            radioButton1.checked = true;
+        
+            var radioButton2 = document.getElementById("list-option-2");
+            radioButton2.checked = false;
+            
+            var radioButton3 = document.getElementById("list-option-3");
+            radioButton2.checked = false;
+        }
+
         //Displays story block based on first decision made.  Also calls function to load next question and associated answers. HAJ.
         function decisionOne() {
               if (document.getElementById("list-option-1").checked == true) {
