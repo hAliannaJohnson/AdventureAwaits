@@ -891,7 +891,8 @@
               document.getElementById("QuestionThree").innerHTML ="You choose to take the rocky path."; 
           }
 
-    //Resets the story to start by using a page reload. Referenced https://www.w3schools.com/jsref/met_loc_reload.asp.HAJ.
+    /*Resets the story to start by using a page reload. Referenced https://www.w3schools.com/jsref/met_loc_reload.asp.HAJ. 
+      Also placed page focus on banner after reload.HAJ.*/
     function pageRefresh(){
         location.reload();
         bannerFocus.setAttribute("tabindex", 1);
