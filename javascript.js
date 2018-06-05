@@ -65,7 +65,7 @@
                     storyProgress += 1;
                     break;
             } 
-    
+        
         }   
         //Displays story block based on first decision made.  Also calls function to load next question and associated answers. HAJ.
         function decisionOne() {
