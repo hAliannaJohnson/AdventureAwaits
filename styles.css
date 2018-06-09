@@ -565,3 +565,26 @@ body .demo-blog {
     visibility: visible;
     padding-top: 0; /* Override inherited padding. HAJ. */
 }
+/* Color changed on button to meet AAA accessibility for normal and large text. HAJ.*/
+.mdl-button--raised.mdl-button--colored{
+    background-color: #08538f;
+}
+
+/*h1 adjustment for accessibility, replacing h3. HAJ. */
+h1{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    /*font-size: 34px;*/
+    line-height: 40px;
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+/* Overrode materials demo size to make the Q and A area more responsive. HAJ.*/
+.demo-list-control{
+    width: 20em;
+}
